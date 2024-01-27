@@ -1,0 +1,20 @@
+{
+  "name": "samcolors",
+  "version": "1.0.0",
+  "main": "./samcolors.js",
+  "sideEffects": false,
+  "description": "A library to use colors in the terminal using nodejs",
+  "files": [
+    "samcolors.js"
+  ],
+  "keywords": [
+    "terminal",
+    "colors",
+    "formatting",
+    "cli",
+    "console"
+  ],
+  "author": "SamuelPedrera",
+  "repository": "",
+  "license": "ISC"
+}
