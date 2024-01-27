@@ -23,7 +23,7 @@ const colors = {
   bgYellow: "\x1b[43m",
   bgBlue: "\x1b[44m",
   bgPink: "\x1b[45m",
-  bglightBlue: "\x1b[46m",
+  bgLightBlue: "\x1b[46m",
   bgWhite: "\x1b[47m",
 };
 
@@ -100,8 +100,8 @@ class SamColors {
   bgPink(str) {
     return colors.bgPink + str + colors.reset;
   }
-  bglightBlue(str) {
-    return colors.bglightBlue + str + colors.reset;
+  bgLightBlue(str) {
+    return colors.bgLightBlue + str + colors.reset;
   }
   bgWhite(str) {
     return colors.bgWhite + str + colors.reset;
@@ -110,9 +110,34 @@ class SamColors {
 
 const samcolors = new SamColors();
 
-module.exports = samcolors
+module.exports = samcolors;
 module.exports = {
   samcolors,
-  colors
+  colors,
+  reset: samcolors.reset,
+  bold: samcolors.bold,
+  gray: samcolors.gray,
+  italic: samcolors.italic,
+  underline: samcolors.underline,
+  blink: samcolors.blink,
+  inverse: samcolors.inverse,
+  hidden: samcolors.hidden,
+  crossedOut: samcolors.crossedOut,
+  doubleUnderline: samcolors.doubleUnderline,
+  black: samcolors.black,
+  red: samcolors.red,
+  green: samcolors.green,
+  yellow: samcolors.yellow,
+  blue: samcolors.blue,
+  pink: samcolors.pink,
+  lightBlue: samcolors.lightBlue,
+  white: samcolors.white,
+  bgBlack: samcolors.bgBlack,
+  bgRed: samcolors.bgRed,
+  bgGreen: samcolors.bgGreen,
+  bgYellow: samcolors.bgYellow,
+  bgBlue: samcolors.bgBlue,
+  bgPink: samcolors.bgPink,
+  bgLightBlue: samcolors.bgLightBlue,
+  bgWhite: samcolors.bgWhite,
 };
-
